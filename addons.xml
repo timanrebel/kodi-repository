@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
- <addon id="repository.timanrebel" name="timanrebel's Add-ons" version="1.0.0" provider-name="timanrebel">
+ <addon id="repository.timanrebel" name="timanrebel's Add-ons" version="1.0.1" provider-name="timanrebel">
   <requires>
       <import addon="xbmc.addon" version="12.0.0"/>
   </requires>
   <extension point="xbmc.addon.repository" name="timanrebel's Add-ons">
       <info compressed="false">https://github.com/timanrebel/kodi-repository/raw/master/addons.xml</info>
       <checksum>https://github.com/timanrebel/kodi-repository/raw/master/addons.xml.md5</checksum>
-      <datadir zip="true">https://github.com/timanrebel/kodi-repository/raw/master/</datadir>
+      <datadir zip="false">https://github.com/timanrebel/kodi-repository/raw/master/</datadir>
       <hashes>false</hashes>
   </extension>
   <extension point="xbmc.addon.metadata">
@@ -17,7 +17,7 @@
   </extension>
 </addon>
 
-<addon id="skin.mimic.xs" version="5.0.3" name="Mimic" provider-name="timanrebel">
+<addon id="skin.mimic.xs" version="5.0.3a" name="Mimic XS" provider-name="timanrebel">
    <requires>
       <import addon="xbmc.gui" version="5.12.0" />
       <import addon="resource.images.studios.white" version="0.0.4" />
@@ -33,6 +33,22 @@
       <description>An adaption of Mimic But optimized for cars</description>
       <platform>all</platform>
    </extension>
+</addon>
+
+<?xml version="1.0.1" encoding="UTF-8" standalone="yes"?>
+<addon id="service.autoresume"
+       name="AutoResume"
+       version="10.7.4"
+       provider-name="gatorfreak">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" start="startup" library="default.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Automatically resume playback even after abrupt shutdown.</summary>
+    <description>This service will automatically resume playback when XBMC starts. Even if the media was never stopped and XBMC was not shutdown (i.e. power was cut).</description>
+  </extension>
 </addon>
 
 </addons>

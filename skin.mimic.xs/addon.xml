@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.mimic.xs"
-  version="5.0.3"
-  name="Mimic"
+  version="5.0.3a"
+  name="Mimic XS"
   provider-name="braz">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
