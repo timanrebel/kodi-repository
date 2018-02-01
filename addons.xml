@@ -17,40 +17,43 @@
   </extension>
 </addon>
 
-<addon id="plugin.script.ibuscommunicator" name="IBusCommunicator" version="1.3.6" provider-name="harryberlin">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import_off addon="script.module.pyserial" version="3.4" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py" />
-  <extension point="xbmc.service" start="login" library="service.py" />
-  <extension point="xbmc.addon.metadata">
-    <platform>linux windx</platform>
-    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-    <summary lang="en">IBus Communication for BMW</summary>
-    <description lang="en">Addon for controlling Raspberry Pi with original BMW (E46, E39, E53,...) with Professional Navigation System. Radio BM24, BM54 and 16:9 Bordscreen.</description>
-    <forum>http://www.bmwraspcontrol.de/board/showthread.php?tid=295</forum>
-    <email>debug.ibuscommunicator@gmx.de</email>
-    <source>not released at the moment</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot></screenshot>
-    </assets>
-  </extension>
+<addon id="skin.mimic.xs" version="5.0.3" name="Mimic" provider-name="timanrebel">
+   <requires>
+      <import addon="xbmc.gui" version="5.12.0" />
+      <import addon="resource.images.studios.white" version="0.0.4" />
+      <import addon="script.skinshortcuts" version="0.6.6" />
+      <import addon="script.toolbox" version="1.0.0" />
+      <import addon="script.skin.helper.service" version="1.0.0" />
+   </requires>
+   <extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+      <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+   </extension>
+   <extension point="xbmc.addon.metadata">
+      <summary lang="en_US">Mimic by braz, adapted for car use</summary>
+      <description lang="en_GB">An adaption of Mimic But optimized for cars</description>
+      <platform>all</platform>
+      <license>CC BY-NC-SA 4.0</license>
+      <forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
+      <website/>
+      <email/>
+      <source>https://github.com/timanrebel/skin.mimic.xs/tree/krypton_v5</source>
+      <assets>
+         <icon>resources/icon.png</icon>
+         <fanart>resources/fanart.jpg</fanart>
+         <screenshot>resources/screenshot-01.jpg</screenshot>
+         <screenshot>resources/screenshot-02.jpg</screenshot>
+         <screenshot>resources/screenshot-03.jpg</screenshot>
+         <screenshot>resources/screenshot-04.jpg</screenshot>
+         <screenshot>resources/screenshot-05.jpg</screenshot>
+         <screenshot>resources/screenshot-06.jpg</screenshot>
+         <screenshot>resources/screenshot-07.jpg</screenshot>
+         <screenshot>resources/screenshot-08.jpg</screenshot>
+         <screenshot>resources/screenshot-09.jpg</screenshot>
+         <screenshot>resources/screenshot-10.jpg</screenshot>
+      </assets>
+      <news>5.0.3[CR]- Adjust views for video addons.[CR]- Fix watched/unwatched indicator settings.[CR]- Misc bug fixes.</news>
+      <size>11163701</size>
+   </extension>
 </addon>
 
-<addon id="script.reliableresume" name="Reliable Resume" version="1.0.2" provider-name="devkid/stanley87/harryberlin">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"></extension>
-  <extension point="xbmc.service" library="observer.py" start="login"></extension>
-  <extension point="xbmc.service" library="default.py" start="login"></extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Resumes the last played media.</summary>
-    <description lang="en">Resumes the last played media reliably by saving the current media position persisently every couple of seconds (configurable). Therefore it also works when the system gets turned off by power loss. Based von ResumeX by stanley87.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 </addons>
