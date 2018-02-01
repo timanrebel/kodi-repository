@@ -29,30 +29,9 @@
       <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
    </extension>
    <extension point="xbmc.addon.metadata">
-      <summary lang="en_US">Mimic by braz, adapted for car use</summary>
-      <description lang="en_GB">An adaption of Mimic But optimized for cars</description>
+      <summary>Mimic by braz, adapted for car use</summary>
+      <description>An adaption of Mimic But optimized for cars</description>
       <platform>all</platform>
-      <license>CC BY-NC-SA 4.0</license>
-      <forum>http://forum.kodi.tv/forumdisplay.php?fid=218</forum>
-      <website/>
-      <email/>
-      <source>https://github.com/timanrebel/skin.mimic.xs/tree/krypton_v5</source>
-      <assets>
-         <icon>resources/icon.png</icon>
-         <fanart>resources/fanart.jpg</fanart>
-         <screenshot>resources/screenshot-01.jpg</screenshot>
-         <screenshot>resources/screenshot-02.jpg</screenshot>
-         <screenshot>resources/screenshot-03.jpg</screenshot>
-         <screenshot>resources/screenshot-04.jpg</screenshot>
-         <screenshot>resources/screenshot-05.jpg</screenshot>
-         <screenshot>resources/screenshot-06.jpg</screenshot>
-         <screenshot>resources/screenshot-07.jpg</screenshot>
-         <screenshot>resources/screenshot-08.jpg</screenshot>
-         <screenshot>resources/screenshot-09.jpg</screenshot>
-         <screenshot>resources/screenshot-10.jpg</screenshot>
-      </assets>
-      <news>5.0.3[CR]- Adjust views for video addons.[CR]- Fix watched/unwatched indicator settings.[CR]- Misc bug fixes.</news>
-      <size>11163701</size>
    </extension>
 </addon>
 
