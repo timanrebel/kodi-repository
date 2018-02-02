@@ -14,7 +14,6 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
-			<property name="widgetIcon">21371</property>
 			<onclick>ActivateWindow(Music)</onclick>
 			<property name="path">ActivateWindow(Music)</property>
 			<property name="list">Music</property>
@@ -36,7 +35,6 @@
 			<property name="widgetType">artists</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetPath">library://music/artists.xml/</property>
-			<property name="widgetSortBy">sorttitle</property>
 			<onclick condition="Library.HasContent(Music)">ActivateWindow(Music,library://music/artists.xml,return)</onclick>
 			<property name="path">ActivateWindow(Music,library://music/artists.xml,return)</property>
 			<property name="list">library://music/artists.xml</property>
@@ -59,7 +57,6 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetPath">library://music/albums.xml/</property>
-			<property name="widgetSortBy">sorttitle</property>
 			<onclick condition="Library.HasContent(Music)">ActivateWindow(Music,library://music/albums.xml,return)</onclick>
 			<property name="path">ActivateWindow(Music,library://music/albums.xml,return)</property>
 			<property name="list">library://music/albums.xml</property>
@@ -94,11 +91,6 @@
 			<thumb />
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetName">10001</property>
-			<property name="widgetType">program</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
 			<property name="list">AddonBrowser</property>
@@ -115,11 +107,6 @@
 			<thumb />
 			<property name="labelID">13000</property>
 			<property name="defaultID">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetName">Settings</property>
-			<property name="widgetType" />
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
 			<onclick>ActivateWindow(Settings)</onclick>
 			<property name="path">ActivateWindow(Settings)</property>
 			<property name="list">Settings</property>
@@ -378,11 +365,6 @@
 			<property name="list">Programs</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -399,11 +381,6 @@
 			<property name="list">addons://repos/</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -420,11 +397,6 @@
 			<property name="list">Settings</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -441,11 +413,6 @@
 			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -462,11 +429,6 @@
 			<property name="list">shutdownmenu</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -483,11 +445,6 @@
 			<property name="list">PlayerControl(PartyMode)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),quicknav)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -504,11 +461,6 @@
 			<property name="list">FileManager</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),quicknav)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -526,11 +478,6 @@
 			<property name="list">events://</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -548,7 +495,6 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetPath">musicdb://recentlyaddedalbums/</property>
 			<property name="widgetTarget">music</property>
-			<property name="widgetIcon">21371</property>
 			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),music)">ActivateWindow(Music)</onclick>
 			<property name="path">ActivateWindow(Music)</property>
 			<property name="list">Music</property>
@@ -726,7 +672,6 @@
 			<property name="widgetType">artists</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetPath">library://music/artists.xml/</property>
-			<property name="widgetSortBy">sorttitle</property>
 			<onclick condition="Library.HasContent(Music)">ActivateWindow(Music,library://music/artists.xml,return)</onclick>
 			<property name="path">ActivateWindow(Music,library://music/artists.xml,return)</property>
 			<property name="list">library://music/artists.xml</property>
@@ -749,7 +694,6 @@
 			<property name="widgetType">albums</property>
 			<property name="widgetTarget">music</property>
 			<property name="widgetPath">library://music/albums.xml/</property>
-			<property name="widgetSortBy">sorttitle</property>
 			<onclick condition="Library.HasContent(Music)">ActivateWindow(Music,library://music/albums.xml,return)</onclick>
 			<property name="path">ActivateWindow(Music,library://music/albums.xml,return)</property>
 			<property name="list">library://music/albums.xml</property>
@@ -875,11 +819,6 @@
 			<thumb />
 			<property name="labelID">24001</property>
 			<property name="defaultID">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetName">10001</property>
-			<property name="widgetType">program</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
 			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-24001)">ActivateWindow(AddonBrowser)</onclick>
 			<property name="path">ActivateWindow(AddonBrowser)</property>
 			<property name="list">AddonBrowser</property>
@@ -903,11 +842,6 @@
 			<property name="list">Programs</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-24001</property>
 		</item>
@@ -925,11 +859,6 @@
 			<property name="list">addons://repos/</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-24001</property>
 		</item>
@@ -941,11 +870,6 @@
 			<thumb />
 			<property name="labelID">13000</property>
 			<property name="defaultID">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetName">Settings</property>
-			<property name="widgetType" />
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
 			<onclick condition="String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)">ActivateWindow(Settings)</onclick>
 			<property name="path">ActivateWindow(Settings)</property>
 			<property name="list">Settings</property>
@@ -969,11 +893,6 @@
 			<property name="list">Settings</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-13000</property>
 		</item>
@@ -991,11 +910,6 @@
 			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-13000</property>
 		</item>
@@ -1013,11 +927,6 @@
 			<property name="list">shutdownmenu</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 			<property name="submenuVisibility">num-13000</property>
 		</item>
@@ -1523,11 +1432,6 @@
 			<property name="list">Programs</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1544,11 +1448,6 @@
 			<property name="list">addons://repos/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1567,11 +1466,6 @@
 			<property name="list">Programs</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1588,11 +1482,6 @@
 			<property name="list">addons://repos/</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-24001)</visible>
 			<property name="group">24001</property>
-			<property name="widget">addon</property>
-			<property name="widgetTarget">programs</property>
-			<property name="widgetPath">addons://sources/executable</property>
-			<property name="widgetType">program</property>
-			<property name="widgetName">10001</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1611,11 +1500,6 @@
 			<property name="list">Settings</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1632,11 +1516,6 @@
 			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1653,11 +1532,6 @@
 			<property name="list">shutdownmenu</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1676,11 +1550,6 @@
 			<property name="list">Settings</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1697,11 +1566,6 @@
 			<property name="list">RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1718,11 +1582,6 @@
 			<property name="list">shutdownmenu</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),num-13000)</visible>
 			<property name="group">13000</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1741,11 +1600,6 @@
 			<property name="list">PlayerControl(PartyMode)</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1762,11 +1616,6 @@
 			<property name="list">FileManager</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1784,11 +1633,6 @@
 			<property name="list">events://</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1807,11 +1651,6 @@
 			<property name="list">PlayerControl(PartyMode)</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),quicknav)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1828,11 +1667,6 @@
 			<property name="list">FileManager</property>
 			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),quicknav)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1850,11 +1684,6 @@
 			<property name="list">events://</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="group">quicknav</property>
-			<property name="widget">settings</property>
-			<property name="widgetTarget" />
-			<property name="widgetPath" />
-			<property name="widgetType" />
-			<property name="widgetName">Settings</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1919,10 +1748,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
 				<include content="WidgetContents">
 					<param name="id">80111</param>
-					<param name="path">musicdb://recentlyaddedalbums/</param>
-					<param name="target">music</param>
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80111</param>
 					<param name="ondown">80111</param>
 					<param name="onleft">9000</param>
@@ -1931,6 +1756,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">musicdb://recentlyaddedalbums/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -2205,10 +2031,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),artists)</visible>
 				<include content="WidgetContents">
 					<param name="id">80112</param>
-					<param name="path">library://music/artists.xml/</param>
-					<param name="target">music</param>
-					<param name="sortby">sorttitle</param>
-					<param name="sortdirection" />
 					<param name="onup">80112</param>
 					<param name="ondown">80112</param>
 					<param name="onleft">9000</param>
@@ -2217,6 +2039,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">library://music/artists.xml/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -2491,10 +2314,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),albums)</visible>
 				<include content="WidgetContents">
 					<param name="id">80113</param>
-					<param name="path">library://music/albums.xml/</param>
-					<param name="target">music</param>
-					<param name="sortby">sorttitle</param>
-					<param name="sortdirection" />
 					<param name="onup">80113</param>
 					<param name="ondown">80113</param>
 					<param name="onleft">9000</param>
@@ -2503,6 +2322,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">library://music/albums.xml/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -2777,10 +2597,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),radio)</visible>
 				<include content="WidgetContents">
 					<param name="id">80114</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80114</param>
 					<param name="ondown">80114</param>
 					<param name="onleft">9000</param>
@@ -2789,6 +2605,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -3063,10 +2880,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 				<include content="WidgetContents">
 					<param name="id">80115</param>
-					<param name="path">addons://sources/executable</param>
-					<param name="target">programs</param>
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80115</param>
 					<param name="ondown">80115</param>
 					<param name="onleft">9000</param>
@@ -3075,6 +2888,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -3349,10 +3163,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
 				<include content="WidgetContents">
 					<param name="id">80116</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80116</param>
 					<param name="ondown">80116</param>
 					<param name="onleft">9000</param>
@@ -3361,6 +3171,7 @@
 					<param name="left">494</param>
 					<param name="orientation">vertical</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -3638,10 +3449,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),music)</visible>
 				<include content="WidgetContents">
 					<param name="id">80111</param>
-					<param name="path">musicdb://recentlyaddedalbums/</param>
-					<param name="target">music</param>
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80111</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80111</param>
@@ -3650,6 +3457,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">musicdb://recentlyaddedalbums/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -3923,10 +3731,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),artists)</visible>
 				<include content="WidgetContents">
 					<param name="id">80112</param>
-					<param name="path">library://music/artists.xml/</param>
-					<param name="target">music</param>
-					<param name="sortby">sorttitle</param>
-					<param name="sortdirection" />
 					<param name="onup">80112</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80112</param>
@@ -3935,6 +3739,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">library://music/artists.xml/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -4208,10 +4013,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),albums)</visible>
 				<include content="WidgetContents">
 					<param name="id">80113</param>
-					<param name="path">library://music/albums.xml/</param>
-					<param name="target">music</param>
-					<param name="sortby">sorttitle</param>
-					<param name="sortdirection" />
 					<param name="onup">80113</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80113</param>
@@ -4220,6 +4021,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="music">library://music/albums.xml/</content>
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -4493,10 +4295,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),radio)</visible>
 				<include content="WidgetContents">
 					<param name="id">80114</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80114</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80114</param>
@@ -4505,6 +4303,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -4778,10 +4577,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-24001)</visible>
 				<include content="WidgetContents">
 					<param name="id">80115</param>
-					<param name="path">addons://sources/executable</param>
-					<param name="target">programs</param>
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80115</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80115</param>
@@ -4790,6 +4585,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
@@ -5063,10 +4859,6 @@
 				<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
 				<include content="WidgetContents">
 					<param name="id">80116</param>
-					<param name="path" />
-					<param name="target" />
-					<param name="sortby" />
-					<param name="sortdirection" />
 					<param name="onup">80116</param>
 					<param name="ondown">9000</param>
 					<param name="onleft">80116</param>
@@ -5075,6 +4867,7 @@
 					<param name="left">85</param>
 					<param name="orientation">horizontal</param>
 				</include>
+				<content limit="$VAR[WidgetLimit]" sortby="" sortorder="" target="" />
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>

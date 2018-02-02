@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.mimic.xs"
-  version="5.0.3a"
+  version="5.0.3b"
   name="Mimic XS"
   provider-name="braz">
 	<requires>

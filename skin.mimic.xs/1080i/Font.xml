@@ -2,7 +2,7 @@
 <fonts>
 	<!--********************************
 	************************************
-	*****     DEFAULT 
+	*****     DEFAULT
 	************************************
 	*********************************-->
 	<fontset id="Default" idloc="31390">
@@ -104,7 +104,13 @@
 			<name>font35_title</name>
 			<filename>weblysleekuil.ttf</filename>
 			<style>bold uppercase</style>
-			<size>52</size>
+			<size>55</size>
+		</font>
+		<font>
+			<name>car</name>
+			<filename>weblysleekuil.ttf</filename>
+			<style>bold uppercase</style>
+			<size>65</size>
 		</font>
 		<font>
 			<name>font_MainMenu</name>
@@ -896,7 +902,7 @@
 	</fontset>
 	<!--********************************
 	************************************
-	*****     ASSISTANT 
+	*****     ASSISTANT
 	************************************
 	*********************************-->
 	<fontset id="Assistant" idloc="31264">
@@ -2581,7 +2587,7 @@
 	</fontset>
 	<!--********************************
 	************************************
-	*****     NOTOSANS 
+	*****     NOTOSANS
 	************************************
 	*********************************-->
 	<fontset id="NotoSans" idloc="31117">
@@ -3592,7 +3598,7 @@
 	</fontset>
 	<!--********************************
 	************************************
-	*****     SAWASDEE 
+	*****     SAWASDEE
 	************************************
 	*********************************-->
 	<fontset id="Sawasdee" idloc="31411">

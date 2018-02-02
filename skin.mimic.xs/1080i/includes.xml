@@ -663,17 +663,17 @@
 	                <control type="group">
 						<control type="button">
 							<left>102</left>
-							<top>17</top>
+							<top>34</top>
 							<width>1715</width>
 							<height>45</height>
-							<font>font30</font>
+							<font>car</font>
 							<textoffsetx>15</textoffsetx>
-							<label>$VAR[BreadcrumbsVar]</label>
+							<!-- <label>$VAR[BreadcrumbsVar]</label> -->
 							<label2>$VAR[TopbarFadeLabel1]</label2>
 							<onclick>noop</onclick>
 							<texturefocus>blank.png</texturefocus>
 						</control>
-						<control type="button">
+						<!-- <control type="button">
 							<left>102</left>
 							<top>59</top>
 							<width>1715</width>
@@ -686,7 +686,7 @@
 							<onclick>noop</onclick>
 							<texturefocus>blank.png</texturefocus>
 							<focusedcolor>$VAR[ColorHighlightVar]</focusedcolor>
-						</control>
+						</control> -->
 					</control>
 				</control>
 			</control>
@@ -1369,7 +1369,7 @@
                 <icon>DefaultSets.png</icon>
                 <onclick>ActivateWindow(MediaSettings)</onclick>
             </item>
-            
+
             <item id="5">
                 <label>$LOCALIZE[19020]</label>
                 <label2>$LOCALIZE[19019] • $LOCALIZE[19069] • $LOCALIZE[14086] • $LOCALIZE[19043]</label2>

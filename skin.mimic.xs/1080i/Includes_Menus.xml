@@ -179,7 +179,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_MainMenu</font>
+							<font>car</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>$VAR[ColorMenuVar]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -199,7 +199,7 @@
 						<control type="label">
 							<width>430</width>
 							<height>95</height>
-							<font>font_MainMenu</font>
+							<font>car</font>
 							<textoffsetx>20</textoffsetx>
 							<textcolor>$VAR[ColorMenuVar]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
@@ -328,7 +328,7 @@
                 </control>
     		</control>
         </control>
-	</include>	
+	</include>
 	<include name="SubmenuListContent">
 		<itemlayout height="$PARAM[SubmenuItemHeight]" width="$PARAM[SubmenuItemWidth]">
 			<control type="image">
