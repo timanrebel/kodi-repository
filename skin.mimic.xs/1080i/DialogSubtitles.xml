@@ -24,13 +24,12 @@
 					<aspectratio align="right">keep</aspectratio>
 				</control>
 				<control type="label" id="140">
-					<left>30</left>
-					<top>88</top>
-					<width>1262</width>
-					<height>540</height>
+					<left>40</left>
+					<top>640</top>
+					<width>900</width>
+					<height>48</height>
 					<font>font15</font>
-					<align>center</align>
-					<visible>String.IsEmpty(Container(120).ListItem.Label)</visible>
+					<visible>false</visible>
 				</control>
 				<control type="label">
 					<left>1396</left>

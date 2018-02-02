@@ -209,7 +209,7 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -218,8 +218,9 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
+							<textcolor>$VAR[ColorHighlightVar]</textcolor>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
 						<control type="label">
@@ -294,7 +295,7 @@
 							<left>135</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -303,7 +304,7 @@
 							<left>170</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
@@ -379,7 +380,7 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -388,7 +389,7 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
@@ -464,7 +465,7 @@
 							<left>135</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -473,7 +474,7 @@
 							<left>170</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
@@ -734,7 +735,7 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -743,7 +744,7 @@
 							<top>3</top>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
@@ -811,7 +812,7 @@
 							<left>135</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>!ListItem.IsPlaying</visible>
 						</control>
@@ -820,7 +821,7 @@
 							<left>170</left>
 							<right>80</right>
 							<height>70</height>
-							<font>font30</font>
+							<font>font35_title</font>
 							<label>$VAR[ListMainLabelVar]</label>
 							<visible>ListItem.IsPlaying</visible>
 						</control>
