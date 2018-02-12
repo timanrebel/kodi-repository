@@ -17,7 +17,7 @@
   </extension>
 </addon>
 
-<addon id="skin.mimic.xs" version="5.0.3d" name="Mimic XS" provider-name="timanrebel">
+<addon id="skin.mimic.xs" version="5.0.3e" name="Mimic XS" provider-name="timanrebel">
    <requires>
       <import addon="xbmc.gui" version="5.12.0" />
       <import addon="resource.images.studios.white" version="0.0.4" />
