@@ -34,8 +34,12 @@ def resume():
         # Read from autoresume.txt.
         f = open(PATH, 'r')
         mediaFile = f.readline().rstrip('\n')
-        position = float(f.readline())
-        playlistPos = int(f.readline())
+        position = 0
+        playlistPos = 0
+
+        if mediaFile:
+          position = float(f.readline())
+          playlistPos = int(f.readline())
         f.close()
 
         if playlistPos  > 0:
@@ -96,7 +100,6 @@ def recordPosition():
         f = open(PATHLIST, 'w')
 
         for item in parsed_json['result']['items']:
-	    log(item['file'].encode('utf8'))
             f.write(item['file'].encode('utf8'))
             f.write('\n')
 
